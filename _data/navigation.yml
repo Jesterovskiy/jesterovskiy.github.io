@@ -1,0 +1,16 @@
+# Site navigation links
+
+- title: About
+  url: /about/
+
+- title: TODO
+  url: /todo/
+
+- title: WishList
+  url: /wishlist/
+
+- title: Blog
+  url: /blog/
+
+- title: Search
+  url: /search/

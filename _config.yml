@@ -1,16 +1,58 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: Jester's Blog
+email: jester.dash@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+  This is my Blog. It contains my WishList, TODO
+  and some technical information from me.
+url: 'http://jesterovskiy.github.io'
+#url: http://localhost:4000
+twitter_username: dash_as
+github_username:  jesterovskiy
+search: true
 
 # Build settings
+permalink:   /:categories/:title/
 markdown: kramdown
-highlighter: pygments
-github: [Repository metadata]
+mathjax: true
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+gems:
+  - jekyll-sitemap
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..2
+  enable_coderay: false
+  input: GFM
+  syntax_highlighter: rouge
+
+# Site owner
+owner:
+  name: Aleksey Dashkevych
+  avatar: bio-photo.jpg
+  email: jester.dash@gmail.com
+  disqus-shortname: jester
+  twitter: dash_as
+  facebook: aleksey.dashkevich
+  github: jesterovskiy
+  stackexchange: #http://stackoverflow.com/users/123456/username
+  linkedin: jesterovskiy
+  instagram: dash_as
+  flickr: #username
+  tumblr: #username
+  pinterest: #username
+  weibo: #userid
+  google:
+    plus: #username
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
